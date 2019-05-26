@@ -1,15 +1,16 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import 'rc-slider/assets/index.css';
 
 const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 0;    
+    outline: 0;
   }
 
-  html, body{
-    height: 100%;  
+  html, body, #root{
+    height: 100%;
   }
 
   body{
