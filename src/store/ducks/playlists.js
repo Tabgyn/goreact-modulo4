@@ -8,7 +8,7 @@ const INITIAL_STATE = {
   loading: false,
 };
 
-export default function Playlist(state = INITIAL_STATE, action) {
+export default function playlist(state = INITIAL_STATE, action) {
   switch (action.type) {
     case Types.GET_REQUEST:
       return { ...state, loading: true };

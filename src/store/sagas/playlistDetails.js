@@ -8,7 +8,7 @@ export function* getPlaylistDetails(action) {
   try {
     const response = yield call(api.get, `/playlists/${action.payload.id}?_embed=songs`);
 
-    yield put(PlaylistDetailsActions.getPlaylistDetailsRequest(response.data));
+    yield put(PlaylistDetailsActions.getPlaylistDetailsSuccess(response.data));
   } catch (error) {
     console.tron.log(error);
   }
