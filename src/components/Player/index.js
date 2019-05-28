@@ -63,6 +63,7 @@ const Player = () => (
         railStyle={{ background: '#404040', borderRadius: 10 }}
         trackStyle={{ background: '#fff' }}
         handleStyle={{ display: 'none' }}
+        value={100}
       />
     </Volume>
   </Container>
