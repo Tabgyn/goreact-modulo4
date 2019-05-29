@@ -3,6 +3,7 @@ import { call, put } from 'redux-saga/effects';
 import api from '../../services/api';
 
 import { Creators as PlaylistActions } from '../ducks/playlists';
+import { Creators as ErrorActions } from '../ducks/error';
 
 export function* getPlaylists() {
   try {
@@ -10,6 +11,6 @@ export function* getPlaylists() {
 
     yield put(PlaylistActions.getPlaylistsSuccess(response.data));
   } catch (error) {
-    console.tron.log(error);
+    yield put(ErrorActions.setError('Could not get playlist'));
   }
 }

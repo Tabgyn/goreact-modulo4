@@ -14,6 +14,8 @@ export const Current = styled.div`
   display: flex;
   align-items: center;
 
+  width: 220px;
+
   img {
     width: 48px;
     height: 48px;
@@ -62,6 +64,7 @@ export const Time = styled.div`
   margin-top: 5px;
 
   span {
+    width: 30px;
     font-size: 11px;
     color: #b3b3b3;
   }
@@ -69,7 +72,7 @@ export const Time = styled.div`
 
 export const ProgressSlider = styled.div`
   width: 500px;
-  margin: 0 15px;
+  margin: 0 5px;
 `;
 
 export const Volume = styled.div`
